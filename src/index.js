@@ -2,10 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Router from './components/Router';
+import Menu from './components/Menu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div style={{ textAlign: "center", backgroundColor: "antiqueWhite" }}>
+      <Menu></Menu>
+      <hr />
+      <Router></Router>
+      <p style={{ fontStyle: "italic" }}>Pie de Página</p>
+    </div>
   </React.StrictMode>
 );
 
